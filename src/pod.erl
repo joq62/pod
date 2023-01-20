@@ -7,7 +7,7 @@
 
 -module(pod).
 
--define(SERVER,pod_server).
+-define(SERVER,pod_node_server).
 
 -export([
 	 ping/0
@@ -26,8 +26,8 @@
 %%--------------------------------------------------------------------
 	    
 %% call
-start()-> gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
-stop()-> gen_server:call(?MODULE, {stop},infinity).
+start()-> gen_server:start_link({local, ?SERVER}, ?SERVER, [], []).
+stop()-> gen_server:call(?SERVER, {stop},infinity).
 
 
 

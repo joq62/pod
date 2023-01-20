@@ -5,6 +5,6 @@
               {mod,{pod_app,[]}},
               {applications,[kernel,stdlib]},
               {env,[]},
-              {modules,[pod,pod_app,pod_server,pod_sup]},
+              {modules,[pod,pod_app,pod_node_server,pod_sup]},
               {licenses,["Apache-2.0"]},
               {links,[]}]}.

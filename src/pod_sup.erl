@@ -35,7 +35,7 @@ init([]) ->
 		  #{id=>sd,
 		    start=>{sd,start,[]}},
 		  #{id=>pod,
-		    start=>{pod_server,start,[]}}],
+		    start=>{pod,start,[]}}],
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions

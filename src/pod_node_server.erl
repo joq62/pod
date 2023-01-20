@@ -7,7 +7,7 @@
 %%% 
 %%% Created : 10 dec 2012
 %%% -------------------------------------------------------------------
--module(pod_server).
+-module(pod_node_server). 
  
 -behaviour(gen_server).
 
