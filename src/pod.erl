@@ -10,10 +10,26 @@
 -define(SERVER,pod_server).
 
 -export([
-	
 	 ping/0
 	
 	]).
+
+-export([
+	 start/0,
+	 stop/0
+	]).
+
+%%--------------------------------------------------------------------
+%% @doc
+%% @spec
+%% @end
+%%--------------------------------------------------------------------
+	    
+%% call
+start()-> gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
+stop()-> gen_server:call(?MODULE, {stop},infinity).
+
+
 
 %%--------------------------------------------------------------------
 %% @doc
