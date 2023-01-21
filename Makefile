@@ -12,6 +12,8 @@ all:
 	rebar3 compile;	
 	cp _build/default/lib/*/ebin/* ebin;
 	rm -rf _build*;
+	rm -f ebin/sd.app;
+	rm -f ebin/common.app;
 	git add -f *;
 	git commit -m $(m);
 	git push;
