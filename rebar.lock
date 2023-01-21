@@ -1,8 +1,8 @@
 [{<<"common">>,
   {git,"https://github.com/joq62/common.git",
-       {ref,"b1be4907cb66d540195dc8ad5ccaa83b32e8dc02"}},
+       {ref,"e8fdf85c109b4588fddac9fddbfdb4bf6612742f"}},
   0},
  {<<"sd">>,
   {git,"https://github.com/joq62/sd.git",
-       {ref,"a25751f2b6454685612b10312726eb09a487e634"}},
+       {ref,"14c9f4757f4e73c3930a45e2509b8e40f5aaa48d"}},
   0}].
